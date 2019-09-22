@@ -8,8 +8,16 @@
     <li class="nav-item">
         <a  class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Hello @User.Identity.Name!</a>
     </li>
-    <li class="nav-item">  
-        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Vinhos</a>
+    <li class="dropdown">  
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Vinhos <i class="fa fa-angle-down"></i></a>
+        <ul class="dropdown-menu">
+            <li><a href="blog-item.html">Tipos</a></li>
+                                <li><a href="#">Ocasião</a></li>
+                                <li><a href="#">Uvas</a></li>
+                                <li><a href="#">Países</a></li>
+                                <li><a href="#">Região</a></li>
+        </ul>
+        <!-- <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Vinhos</a> -->
     </li>
      <li class="nav-item">  
         <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Recomendações</a>
